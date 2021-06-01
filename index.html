@@ -27,7 +27,7 @@
             </a>
             <div class="w-100 text-right">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                  
+
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -81,7 +81,7 @@
   onfocus = 'if (this.value == "Card Number") this.value = ""'
   > <br><br>
 
-  <select class="month" name="month" id="month" style="size:20px;" value="MM*"  >
+  <!-- <select class="month" name="month" id="month" style="size:20px;" value="MM*"  >
     <option value="MM*" onclick = 'if (this.value == "MM*") this.value = ""'>MM*</option>
     <option value="January">January</option>
     <option value="February">February</option>
@@ -95,7 +95,16 @@
     <option value="October">October</option>
     <option value="November">November</option>
     <option value="November">December</option>
-    </select>
+    </select> -->
+
+    <input class="month"
+    type="text" name="month"
+    value="MM*"
+    size="20"
+    maxlength="2"
+    oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')"
+    onfocus = 'if (this.value == "month") this.value = ""'
+    >
 
   <!-- <label >Expiration Date</label> -->
 
