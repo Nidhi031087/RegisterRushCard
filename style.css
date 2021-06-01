@@ -1,0 +1,65 @@
+.heading {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+}
+
+.query_form{
+  width : 90% ;
+  height: 450px;
+  text-align: Left;
+  float: left;
+  margin: 40px;
+  padding-left: 20;
+  border:solid;
+}
+
+
+label{
+  display: block;
+  width:200px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+input{
+  text-align: center;
+}
+
+.logo_div{
+  align-items: center;
+  text-align: center;
+}
+
+.discount{
+  text-align: center;
+
+}
+
+.button_pops{
+  width: 100%;
+
+}
+.month{
+  width: 170px;
+  height: 30px;
+}
+
+h2{
+  text-align: center;
+}
+/*
+
+.first_heading {
+  text-align: left;
+  background-color: black;
+  color: white;
+} */
+
+
+.form_elements {
+
+  padding-left:20px;
+}

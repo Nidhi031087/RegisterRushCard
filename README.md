@@ -1,2 +1,1 @@
-# RegisterRushCard
-Final version
+# RushCard
