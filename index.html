@@ -18,15 +18,16 @@
     <!-- example 6 - center on mobile -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="d-flex flex-grow-1">
-            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --><img src="logo_rushcard_phone.png" alt="RUSHCARD"></span>
             <a class="navbar-brand d-none d-lg-inline-block" href="#">
               <h1><img src="logo_rushcard.png" alt="RUSHCARD"></h1>
             </a>
             <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-                <img src="//placehold.it/40?text=LOGO" alt="logo">
+                <!-- <img src="//placehold.it/40?text=LOGO" alt="logo"> -->
             </a>
             <div class="w-100 text-right">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                  
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -58,28 +59,11 @@
         </div>
     </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- <header class="heading">
       <h1>Register your Rush Card online and activate it</h1>
     </header> -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="text-align:"center";">
 
       <div class="row">
         <div class="col-sm-6" style="background-color:white;"><div class="query_form" style="background-color:white" >
@@ -91,14 +75,14 @@
   <input class="card_number"
   type="text" name="card_number"
   value="Card Number"
-
   size="20"
   maxlength="16"
   oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')"
   onfocus = 'if (this.value == "Card Number") this.value = ""'
   > <br><br>
 
-  <select class="month" name="month" id="month" style="size:20px;">
+  <select class="month" name="month" id="month" style="size:20px;" value="MM*"  >
+    <option value="MM*" onclick = 'if (this.value == "MM*") this.value = ""'>MM*</option>
     <option value="January">January</option>
     <option value="February">February</option>
     <option value="March">March</option>
@@ -159,12 +143,7 @@
              class="btn btn-primary btn-lg btn-block"  class="button_pops"
              style="background-color:black;width: 100%;" >Register</button>
 
-             <!-- <script type="text/javascript">
-                 document.getElementById("myButton").onclick = function () {
-                     location.href = "./success.html";
 
-              };
-               </script> -->
            </form>
         </div>
 </div>
@@ -237,7 +216,7 @@
 
       </div>
 
-
+bu
 
 
     </div>
