@@ -16,10 +16,7 @@
   border:solid;
 }
 
-.month{
-  width: 170px;
-  height: 30px;
-}
+
 label{
   display: block;
   width:200px;
@@ -28,12 +25,14 @@ label{
 }
 
 input{
-  text-align: center;
+  text-align: left;
+  margin:2px;
 }
 
 .logo_div{
-  align-items: center;
+
   text-align: center;
+  
 }
 
 .discount{
@@ -45,7 +44,10 @@ input{
   width: 100%;
 
 }
-
+.month{
+  width: 170px;
+  height: 30px;
+}
 
 h2{
   text-align: center;
@@ -62,4 +64,25 @@ h2{
 .form_elements {
 
   padding-left:20px;
+}
+
+.month {
+  text-align: left;
+
+}
+
+.year{
+  text-align: left;
+}
+
+
+.logo_phone{
+  text-align: left;
+  width:40%;
+  height: auto;
+}
+
+
+.offer{
+  text-align: right;
 }

